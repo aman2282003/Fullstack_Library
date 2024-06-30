@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="">
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="fullstack-library-tawny.vercel.app/" element={<Home />} />
         <Route
           path="/books"
           element={authuser ? <Bookss /> : <Navigate to="/signup" />}
