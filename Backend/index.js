@@ -16,10 +16,7 @@ const MONGODB_URI = process.env.MONGODB_URI;
 // Connect to mongodb
 
 try {
-  mongoose.connect(MONGODB_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  });
+  mongoose.connect(MONGODB_URI );
   console.log("Connected to databse");
 } catch (error) {
   console.log(error);
