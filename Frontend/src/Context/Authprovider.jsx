@@ -7,7 +7,7 @@ export default function AuthProvider({ children }) {
   let parsedAuthUser;
 
   try {
-    parsedAuthUser = initialAuthUser ? JSON.parse(initialAuthUser) : null;
+    parsedAuthUser = initialAuthUser ? JSON.parse(initialAuthUser) : undefined;
   } catch (e) {
     console.error("Failed to parse auth user from localStorage:", e);
     parsedAuthUser = null;

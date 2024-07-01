@@ -13,10 +13,11 @@ app.use(express.json());
 // const dotenv = require("dotenv").config()
 const PORT = process.env.PORT || 3000;
 const MONGODB_URI = process.env.MONGODB_URI;
+console.log(MONGODB_URI)
 // Connect to mongodb
 
 try {
-  mongoose.connect(MONGODB_URI );
+  mongoose.connect(MONGODB_URI);
   console.log("Connected to databse");
 } catch (error) {
   console.log(error);
