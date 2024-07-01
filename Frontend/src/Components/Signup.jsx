@@ -38,7 +38,7 @@ export const Signup = () => {
             isClosable: true,
           });
           navigate(from, { replace: true });
-          localStorage.setItem("Users", JSON.stringify(res.data.user));
+          // localStorage.setItem("Users", JSON.stringify(res.data.user));
         }
       })
       .catch((err) => {
