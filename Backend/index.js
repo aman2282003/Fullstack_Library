@@ -26,6 +26,15 @@ try {
 //defining Routes
 app.use("/book", bookRoute);
 app.use("/user", userRoute);
+
+
+app.get("/", (req,res) => {
+    res.send("Got the data from backend")
+})
+
+
+
+
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
