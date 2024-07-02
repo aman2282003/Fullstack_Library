@@ -12,7 +12,9 @@ export const Avlbook = () => {
   useEffect(() => {
     const getBook = async () => {
       try {
-        const response = await axios.get("http://localhost:4000/book");
+        const response = await axios.get(
+          "https://fullstack-library-3.onrender.com/book"
+        );
 
         const fdata = response.data.filter((data) => data.category === "Free");
         setBook(fdata);
@@ -26,7 +28,7 @@ export const Avlbook = () => {
   var settings = {
     dots: true,
     infinite: false,
-   
+
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 3,
