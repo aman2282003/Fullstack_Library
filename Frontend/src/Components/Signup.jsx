@@ -26,7 +26,7 @@ export const Signup = () => {
     };
 
     await axios
-      .post("http://localhost:4000/user/signup", userInfo)
+      .post("https://fullstack-library-3.onrender.com/user/signup", userInfo)
       .then((res) => {
         console.log(res.data);
         if (res.data) {
@@ -42,7 +42,6 @@ export const Signup = () => {
         }
       })
       .catch((err) => {
-        // alert("Error:" + err.response.data.message);
         toast({
           title: "Error:" + err.response.data.message,
           status: "error",
