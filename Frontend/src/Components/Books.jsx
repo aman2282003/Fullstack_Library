@@ -9,7 +9,7 @@ export const Books = () => {
   useEffect(() => {
     const getBook = async () => {
       try {
-        const response = await axios.get("http://localhost:4000/book");
+        const response = await axios.get("https://fullstack-library-3.onrender.com/book");
         console.log(response.data);
         setBook(response.data);
       } catch (error) {
